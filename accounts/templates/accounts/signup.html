@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load bootstap3 %}
+{% load bootstrap3 %}
 
 {% block content %}
 
@@ -7,7 +7,7 @@
       <h1>SINGUP</h1>
       <form class=""  method="post">
         {% csrf_token %}
-        {% bootstap_form form %}
+        {% bootstrap_form form %}
         <input type="submit" name="btn btn-default" value="Sign Up">
       </form>
     </div>
