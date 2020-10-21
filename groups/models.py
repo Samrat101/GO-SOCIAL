@@ -1,13 +1,14 @@
 from django.db import models
 from django.utils.text import slugify
 import misaka #for link embedding
+from django.urls import reverse
 from django.contrib.auth import get_user_model
 
 # Create your models here.
 User=get_user_model()
 
 from django import template
-register=template.library()
+register=template.Library()
 
 class Group(models.Model):
     name=models.CharField(max_length=255,unique=True)
@@ -32,8 +33,8 @@ class Group(models.Model):
 
 
 class GroupMember(models.Model):
-    group=models.ForeignKey(Group,related_name='memberships')
-    user=models.ForeignKey(User,related_name='user_groups')
+    group=models.ForeignKey(Group,related_name='memberships',on_delete=models.CASCADE,)
+    user=models.ForeignKey(User,related_name='user_groups',on_delete=models.CASCADE,)
 
     def __str__(self):
         return self.user.username
