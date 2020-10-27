@@ -1,6 +1,41 @@
+.list-group-item{
+  margin-bottom:10px;
+  background-color:grey;
+}
+.div{
+  margin-left: 10px;
+}
+.list-group-item-text{
+  color:#bf2225;
+  border: solid 2px green;
+}
+.badge{
+  font-size:20px;
+}
+.grp{
+  font-size:20px;
+}
+.nav_link{
+  color:#bf2225;
+}
+
+.welimg{
+  width:500px;
+  height:500px;
+}
+.welcome{
+  color:#bf2225;
+  font-size: 80px;
+}
+.welcome-foot{
+  color:#bf2225;
+  font-size:60px;
+}
+
 body {
   margin: 0;
   overflow: hidden;
-  background-color: black;
+  background-color:black;
   color:white;
+  overflow-y: scroll;
 }

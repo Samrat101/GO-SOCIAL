@@ -23,17 +23,17 @@
   <body>
     <nav class="navbar mynav" role="navigation" id="navbar">
       <div class="container">
-        <a class="navbar-brand mynav" href="{% url 'home' %}">STAR SOCIAL</a>
+        <a  class="navbar-brand navbar" style="color:#bf2225" href="{% url 'home' %}"><span class="glyphicon glyphicon-home"></span> G M </a>
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
-            <li><a href="{% url 'posts:create' %}">Post</a></li>
-            <li><a href="{% url 'groups:all' %}">Groups</a></li>
-            <li><a href="{% url 'groups:create' %}">Create Group</a></li>
-            <li><a href="{% url 'accounts:logout' %}">Log out</a></li>
+            <li><a class="nav_link" href="{% url 'posts:create' %}">Post</a></li>
+            <li><a class="nav_link" href="{% url 'groups:all' %}">Groups</a></li>
+            <li><a class="nav_link" href="{% url 'groups:create' %}">Create Group</a></li>
+            <li><a class="nav_link" href="{% url 'accounts:logout' %}">Log out</a></li>
           {% else %}
-              <li><a href="{% url 'groups:all' %}">Groups</a></li>
-              <li><a href="{% url 'accounts:login' %}">Login</a></li>
-              <li><a href="{% url 'accounts:signup' %}">Sign up</a></li>
+              <li><a class="nav_link" href="{% url 'groups:all' %}">Groups</a></li>
+              <li><a class="nav_link" href="{% url 'accounts:login' %}">Login</a></li>
+              <li><a class="nav_link" href="{% url 'accounts:signup' %}">Sign up</a></li>
           {% endif %}
         </ul>
       </div>
