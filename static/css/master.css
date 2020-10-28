@@ -1,6 +1,6 @@
 .mycontent{
   padding-top: 100px;
-  border: 10px solid red;
+ border: 10px solid red;
 }
 
 html,
@@ -10,7 +10,6 @@ body {
   overflow: hidden;
   background: #191063;
   margin: 0;
-  overflow-y: scroll;
 }
 
 
