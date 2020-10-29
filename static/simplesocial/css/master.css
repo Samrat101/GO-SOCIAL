@@ -1,6 +1,22 @@
+
+#btn{
+  color:#f1d4d4;
+}
+
+h1{
+   color:#6A097D;
+}
+#wel{
+  font-size:100px;
+}
+#inp{
+  color:#f1d4d4 ;
+  background: #6A097D ;
+}
 body {
   margin: 0;
   overflow: hidden;
   background-color: black;
   color:white;
+  overflow-y:scroll;
 }

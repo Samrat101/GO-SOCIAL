@@ -2,13 +2,14 @@
 
 {% block prepost %}
 <div class="col-md-4">
-	<h1>@{{ post_user.username }}</h1>
-	<p>Post History</p>
+	<h1 style="color:#f1d4d4">{{ post_user.username }}</h1>
 </div>
 {% endblock %}
 
 {% block post_content %}
 <div class="col-md-8">
+	<br>
+	<h1 style="color:#6A097D"> <strong>Post History</strong></h1>
 	{% for post in post_list %}
 		{% include "posts/_post.html" %}
 	{% endfor %}

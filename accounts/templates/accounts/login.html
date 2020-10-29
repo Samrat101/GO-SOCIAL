@@ -3,11 +3,11 @@
 
 {% block content %}
 <div class="container">
-    <h1>Login</h1>
+    <h1 style="color:#6A097D">Login</h1>
     <form method="POST">
         {% csrf_token %}
         {% bootstrap_form form %}
-        <input type="submit" value="Login" class="btn btn-default">
+        <input id="inp" type="submit" value="Login" class="btn btn-default">
     </form>
 </div>
 {% endblock %}
